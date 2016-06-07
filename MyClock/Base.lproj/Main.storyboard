@@ -1,25 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyClock" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watchTable.png" translatesAutoresizingMaskIntoConstraints="NO" id="9cq-UT-4aw">
+                                <rect key="frame" x="71" y="196" width="178" height="177"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hourIndicator.png" translatesAutoresizingMaskIntoConstraints="NO" id="EL8-Ua-Dey">
+                                <rect key="frame" x="136" y="238" width="48" height="92"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minuteindicator.png" translatesAutoresizingMaskIntoConstraints="NO" id="ibU-TD-z0E">
+                                <rect key="frame" x="146" y="233" width="29" height="103"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secondIndicator.png" translatesAutoresizingMaskIntoConstraints="NO" id="OHe-yF-hGB">
+                                <rect key="frame" x="145" y="234" width="31" height="101"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小黄人钟表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="css-8L-FCD">
+                                <rect key="frame" x="106" y="137" width="108" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="nem-Se-mcN"/>
+                                    <constraint firstAttribute="width" constant="108" id="tDc-iD-LAc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minions.png" translatesAutoresizingMaskIntoConstraints="NO" id="KTl-Hy-X9X">
+                                <rect key="frame" x="204" y="73" width="116" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="wLU-g5-vpp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9cq-UT-4aw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cx9-6v-sXn"/>
+                            <constraint firstItem="css-8L-FCD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MDk-OY-DKg"/>
+                            <constraint firstItem="OHe-yF-hGB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q4Y-Oo-H4R"/>
+                            <constraint firstItem="KTl-Hy-X9X" firstAttribute="leading" secondItem="css-8L-FCD" secondAttribute="trailing" constant="-10" id="QoI-9h-2GH"/>
+                            <constraint firstItem="9cq-UT-4aw" firstAttribute="top" secondItem="css-8L-FCD" secondAttribute="bottom" constant="38" id="RAs-20-0It"/>
+                            <constraint firstItem="ibU-TD-z0E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VCP-an-j9p"/>
+                            <constraint firstItem="css-8L-FCD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="117" id="Xhy-Hb-H0x"/>
+                            <constraint firstItem="EL8-Ua-Dey" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fyy-cm-fnd"/>
+                            <constraint firstItem="OHe-yF-hGB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ieT-tF-zI8"/>
+                            <constraint firstItem="EL8-Ua-Dey" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nrI-Vg-7JT"/>
+                            <constraint firstItem="9cq-UT-4aw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oCH-Tg-xsE"/>
+                            <constraint firstItem="KTl-Hy-X9X" firstAttribute="centerY" secondItem="css-8L-FCD" secondAttribute="centerY" id="qhb-y7-NvG"/>
+                            <constraint firstItem="ibU-TD-z0E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sb3-rX-OOq"/>
+                            <constraint firstAttribute="trailing" secondItem="KTl-Hy-X9X" secondAttribute="trailing" id="viE-Nr-0Up"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Xhy-Hb-H0x"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="hourHand" destination="EL8-Ua-Dey" id="w5t-HU-Nbv"/>
+                        <outlet property="minuteHand" destination="ibU-TD-z0E" id="Uj9-rZ-mtr"/>
+                        <outlet property="secondHand" destination="OHe-yF-hGB" id="dDZ-B9-YT1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-125" y="255"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hourIndicator.png" width="48" height="92"/>
+        <image name="minions.png" width="360" height="640"/>
+        <image name="minuteindicator.png" width="29" height="103"/>
+        <image name="secondIndicator.png" width="31" height="101"/>
+        <image name="watchTable.png" width="178" height="177"/>
+    </resources>
 </document>

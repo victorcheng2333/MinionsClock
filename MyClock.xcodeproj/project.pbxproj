@@ -12,6 +12,12 @@
 		4319C5291BC8AFE20087A827 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4319C5271BC8AFE20087A827 /* Main.storyboard */; };
 		4319C52B1BC8AFE20087A827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4319C52A1BC8AFE20087A827 /* Assets.xcassets */; };
 		4319C52E1BC8AFE20087A827 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4319C52C1BC8AFE20087A827 /* LaunchScreen.storyboard */; };
+		4319C5411BC8B0A00087A827 /* hourIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4319C53D1BC8B0A00087A827 /* hourIndicator@2x.png */; };
+		4319C5421BC8B0A00087A827 /* minuteindicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4319C53E1BC8B0A00087A827 /* minuteindicator@2x.png */; };
+		4319C5431BC8B0A00087A827 /* secondIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4319C53F1BC8B0A00087A827 /* secondIndicator@2x.png */; };
+		4319C5441BC8B0A00087A827 /* watchTable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4319C5401BC8B0A00087A827 /* watchTable@2x.png */; };
+		A50EDBB21D06A953002E0BFC /* minions@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A50EDBB11D06A953002E0BFC /* minions@2x.png */; };
+		A50EDBB41D06A97E002E0BFC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A50EDBB31D06A97E002E0BFC /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		4319C52A1BC8AFE20087A827 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4319C52D1BC8AFE20087A827 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4319C52F1BC8AFE20087A827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4319C53D1BC8B0A00087A827 /* hourIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hourIndicator@2x.png"; sourceTree = "<group>"; };
+		4319C53E1BC8B0A00087A827 /* minuteindicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "minuteindicator@2x.png"; sourceTree = "<group>"; };
+		4319C53F1BC8B0A00087A827 /* secondIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "secondIndicator@2x.png"; sourceTree = "<group>"; };
+		4319C5401BC8B0A00087A827 /* watchTable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "watchTable@2x.png"; sourceTree = "<group>"; };
+		A50EDBB11D06A953002E0BFC /* minions@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "minions@2x.png"; sourceTree = "<group>"; };
+		A50EDBB31D06A97E002E0BFC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,12 @@
 				4319C52A1BC8AFE20087A827 /* Assets.xcassets */,
 				4319C52C1BC8AFE20087A827 /* LaunchScreen.storyboard */,
 				4319C52F1BC8AFE20087A827 /* Info.plist */,
+				4319C53D1BC8B0A00087A827 /* hourIndicator@2x.png */,
+				4319C53E1BC8B0A00087A827 /* minuteindicator@2x.png */,
+				4319C53F1BC8B0A00087A827 /* secondIndicator@2x.png */,
+				4319C5401BC8B0A00087A827 /* watchTable@2x.png */,
+				A50EDBB11D06A953002E0BFC /* minions@2x.png */,
+				A50EDBB31D06A97E002E0BFC /* Icon.png */,
 			);
 			path = MyClock;
 			sourceTree = "<group>";
@@ -121,9 +139,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50EDBB41D06A97E002E0BFC /* Icon.png in Resources */,
 				4319C52E1BC8AFE20087A827 /* LaunchScreen.storyboard in Resources */,
+				4319C5421BC8B0A00087A827 /* minuteindicator@2x.png in Resources */,
 				4319C52B1BC8AFE20087A827 /* Assets.xcassets in Resources */,
+				4319C5411BC8B0A00087A827 /* hourIndicator@2x.png in Resources */,
+				4319C5431BC8B0A00087A827 /* secondIndicator@2x.png in Resources */,
+				A50EDBB21D06A953002E0BFC /* minions@2x.png in Resources */,
 				4319C5291BC8AFE20087A827 /* Main.storyboard in Resources */,
+				4319C5441BC8B0A00087A827 /* watchTable@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +307,7 @@
 				4319C5341BC8AFE20087A827 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
